@@ -1,0 +1,45 @@
+@import "./app";
+@import "./currency-item";
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.search-block {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  input {
+    width: 300px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #333;
+  }
+}

@@ -1,0 +1,53 @@
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #ecebeb;
+  -webkit-box-shadow: 0px 0px 16px 4px rgba(34, 60, 80, 0.45);
+  -moz-box-shadow: 0px 0px 16px 4px rgba(34, 60, 80, 0.45);
+  box-shadow: 0px 0px 6px 1px rgba(34, 60, 80, 0.1);
+  padding: 0 0 30px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  &__col {
+    align-self: center;
+  }
+  &__title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: default;
+  }
+
+  &__icon {
+    &_backs {
+      cursor: pointer;
+      transition: color 0.3s ease-in;
+      &:hover {
+        color: rgb(106, 89, 89);
+      }
+    }
+    &_reload {
+      cursor: pointer;
+      transition: color, transform 0.3s ease-in;
+      margin: 0 0 0 30px;
+      &:hover {
+        color: rgb(106, 89, 89);
+        transform: rotate(30deg);
+      }
+    }
+    &_settings {
+      cursor: pointer;
+      transition: color, transform 0.3s ease-in;
+      &:hover {
+        color: rgb(106, 89, 89);
+        transform: rotate(30deg);
+      }
+    }
+  }
+}

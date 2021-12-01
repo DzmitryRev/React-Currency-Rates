@@ -1,0 +1,47 @@
+.currency-item {
+  display: flex;
+  justify-content: center;
+  cursor: default;
+  &__col {
+    &_name {
+      text-align: center;
+      width: 200px;
+      padding: 5px;
+      align-self: center;
+    }
+    &_rate {
+      width: 80px;
+      padding: 5px;
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+      svg {
+        cursor: pointer;
+      }
+    }
+    &_scale {
+      text-align: center;
+      width: 150px;
+      padding: 5px;
+      align-self: center;
+    }
+    &_checkbox {
+      text-align: center;
+      width: fit-content;
+      align-self: center;
+      width: 30px;
+      padding: 5px;
+    }
+  }
+  &__checkbox {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
