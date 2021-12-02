@@ -1,7 +1,6 @@
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { useState } from "react/cjs/react.development";
 
 const CurrencyItem = ({
   type = "main",
@@ -13,7 +12,6 @@ const CurrencyItem = ({
   addCurrency,
   deleteCurrency,
 }) => {
-  const [copied, setCopied] = useState(false);
   if (type === "settings") {
     return (
       <div className="currency-item">
