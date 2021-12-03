@@ -1,5 +1,5 @@
 import React from "react";
-import Loading from "../assets/Loading";
+import Loading from "../components/Loading";
 import CurrencyItem from "../components/CurrencyItem";
 
 function RatesPage({ rates, isFetch = false, error = false }) {

@@ -61,7 +61,6 @@ function App() {
   useEffect(() => {
     fetchTodayRates(); // Запрос за массивом курсов
   }, [fetchTodayRates]);
-
   return (
     <div className="app">
       <header className="header">
